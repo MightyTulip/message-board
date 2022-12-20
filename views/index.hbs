@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+{{#each messages}}
+    <div class="messages">
+        <div>{{this.text}}</div>
+        <span>{{this.user}} - {{this.added}}</span>
+    </div>
+{{/each}}
+
+<button onclick="window.location.href='/new'">+ Add new message</button>
